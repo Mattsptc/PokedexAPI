@@ -1,0 +1,30 @@
+ url: https://pokeapi.co/api/v2/pokemon
+
+${IP}/${path} = caminho de identificacao do recurso
+
+ IP(dominio)  https://pokeapi.co
+ path: /api/v2/pokemon/${id} - id dinamico
+
+// query string /api/v2/pokemon?type=grass&name=i (smp tem estrutura chave-valor) & - serve para concatenar
+
+ Request Method: GET / POST / PUT / DELETE - Toda requisicao precisa de um method
+// exemplo of /api/v2/pokemon?offset=20&limit=20
+
+
+
+ REQUEST HEADERS - cabecalho de resposta
+//CONFIG DA API
+
+// content-type: application/Json - a resposta que foi enviada ao fazer o GET no servidor
+
+// Response HEADERS - Cabecalho de solicitacao
+//CONFIG DA API
+
+// bem dizer que o browser aceita varios tipos de arquivo como resposta
+
+//text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+
+REQUEST BODY Corpo da requisicao -Usado apenas em methods que fazem sentido ex: Post - Put - salvar pokemon novo {
+    'name': 'josesauro' - JSON
+}
+
